@@ -1,3 +1,5 @@
+<div class="center">
+<div class="tasks">
 <h1>My tasks</h1>
 <% @tasks.each do |task| %>
   <% if task.completed == true %>
@@ -5,5 +7,7 @@
     <% else %>
     <h3><i class="far fa-square"></i><%= link_to task.title, task_path(task) %></h3>
     <% end %>
-   <i class="far fa-plus-square"><%= link_to "Add", new_task_path %></i>
 <% end %>
+<div class="tasks"><i class="far fa-plus-square"><%= link_to "Add", new_task_path %></i></div>
+  </div>
+</div>

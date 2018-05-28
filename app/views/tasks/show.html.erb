@@ -1,16 +1,17 @@
-<h1><%= @task.title %></h1>
+<div class="center">
+<div class="show"><h1><%= @task.title %></h1>
 <div>
   <% if @task.completed == true %>
-    <h3><i class="far fa-check-square"></i><%= @task.details %></h3>
+    <h3><i class="far fa-check-square"></i><%= @task.details  %></h3>
     <% else %>
-    <h3><i class="far fa-square"></i><%= @task.details %></h3>
+    <h3><i class="far fa-square"></i><%= @task.details  %></h3>
   <% end %>
 </div>
 
 <div>
-  <%= link_to "Edit" , edit_task_path %>
+  <%= link_to "Edit" , edit_task_path  %>
 </div>
-
+<hr>
 <div>
   <i class="fas fa-trash-alt"><%= link_to "Delete", task_path(@task.id),
       method: :delete,
@@ -18,6 +19,8 @@
 </div>
 
 <div>
-  <%= link_to "Back to list" , tasks_path %>
+  <%= link_to "Back to list" , tasks_path  %>
 </div>
 
+</div>
+</div>

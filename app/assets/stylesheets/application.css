@@ -18,3 +18,26 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.show , .tasks, .update {
+
+  text-align: center;
+  vertical-align: center;
+  padding: 60px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h3 {
+  font-size: 36px;
+}
+
+
+.center {
+  position: relative;
+  padding: 220px;
+}
